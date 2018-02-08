@@ -18,6 +18,9 @@ body {
 
 body {
     overflow: hidden;
+    &.nocursor{
+      cursor:none;
+    }
 }
 
 h1 {
@@ -2243,6 +2246,7 @@ a.lcars-text-box.blink {
     padding-top: 22px;
     padding-bottom: 7px;
     position: relative;
+    cursor: default;
 }
 
 #left-menu .lcars-element:after {

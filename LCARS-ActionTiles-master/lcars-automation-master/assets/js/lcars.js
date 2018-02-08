@@ -59,6 +59,11 @@ $(document).ready(function() {
     $('[data-audio]').click(function(){
 	   	var audio = $(this).data('audio');
 	   	$('.audio-block audio[data-play="'+audio+'"]')[0].play();
-    });
-
+	});
+	
+	// Mobile check
+	var isMobile = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
+	if (isMobile) {
+		$('body').addClass('nocursor');
+	}
 });
