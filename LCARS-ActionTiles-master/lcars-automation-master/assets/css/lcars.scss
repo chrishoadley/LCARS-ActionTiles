@@ -591,7 +591,7 @@ div[data-bg="lcars-cameras-bg"] {
 
 .lcars-app-container #container {
     margin-top: 4.5rem;
-    margin-left: 9.5rem;
+    margin-left: 9.7rem;
     width: 100%;
     height: calc(100% - 160px);
     overflow: auto;
@@ -2226,12 +2226,17 @@ a.lcars-text-box.blink {
     position: relative;
     left: auto;
 }
-
+.container{
+  .frame{
+    overflow:hidden;
+    border-radius: 15px;
+  }
+}
 .container iframe {
     position: absolute;
     display: block;
     height: 100%;
-    border-radius: 15px;
+    width: calc(100% + 17px);
 }
 
 #left-menu .lcars-element {
